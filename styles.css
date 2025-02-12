@@ -97,6 +97,10 @@ img.hand {
         top: 53vh;
     }
 
+    #tijd {
+        font-size: 10px;
+    }
+
     img.avatar {
         width: 30vw;
     }
@@ -145,26 +149,11 @@ button.zon p {
     height: auto;
     text-align: center;
     font-style: italic;
+    font-size: clamp(0.875rem, 0.647vw + 0.723rem, 1.5rem);
 }
 
 button.zon p span {
     font-weight: bold;
-}
-
-@media (min-width: 500px) {
-    button.zon p {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 700px) {
-    button.zon p {
-        font-size: 24px;
-    }
-
-    button.maan p {
-        font-size: 24px;
-    }
 }
 
 /* Wanneer de donkere modus aan staat, dan is de zon op -300% */
@@ -194,7 +183,10 @@ button.maan p {
     height: auto;
     text-align: center;
     font-style: italic;
+    font-size: clamp(0.875rem, 0.647vw + 0.723rem, 1.5rem);
 }
+
+/* Gebruik gemaakt van CLAMP fluid typography */
 
 button.maan p span {
     font-weight: bold;
@@ -357,7 +349,7 @@ button.raket {
     padding-left: 1.3rem;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: clamp(0.875rem, 0.647vw + 0.723rem, 1.5rem);
 }
 
 .raket.animate {
